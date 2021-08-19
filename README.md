@@ -29,7 +29,7 @@ You will need it if you use Windows parallel Linux. When you restart to Linux fo
 - unmount folder have permission denie
 - run command `sudo ntfsfix <path of partition>`
 - `sudo mount -a`
-- 
+
 ### If you want auto it:
 
 Create sh file
