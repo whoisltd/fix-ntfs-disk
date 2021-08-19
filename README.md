@@ -1,7 +1,7 @@
 # fix-ntfs-disk
 fix fucking ntfs disk on linux
-tự động mount ổ đĩa & khắc phục permission denied
-#Tự động mount ổ đĩa
+Auto mount partition & Auto fix permission denied
+# Auto mount partition
 
 Create folder to mount your disks in there
 
@@ -34,29 +34,35 @@ Create sh file
 
 write it:
 
-`#!/bin/bash
+``` bash
+#!/bin/bash
 
 printf "Start\n" >> /home/fix-ntfs-dík-log.txt
 date >> /home/fix-ntfs-disk-log.txt
 umount /dev/your-partition |& tee -a /home/fix-ntfs-disk-log.txt
 ntfsfix /dev/your-partition |& tee -a /home/fix-ntfs-disk-log.txt
-printf "End\n_____________\n\n" >> /home/fix-ntfs-disk-log.txt`
+printf "End\n_____________\n\n" >> /home/fix-ntfs-disk-log.txt
+```
 
 ![sh file](/images/sh-file.png)
+
 Create service file
 
 `sudo nano /etc/systemd/system/fix-ntfs-disk.service`
 and write it:
-`[Unit]
+```
+[Unit]
 After=network.service
 
 [Service]
 ExecStart=/usr/local/bin/fix-ntfs-disk.sh
 
 [Install]
-WantedBy=default.target`
+WantedBy=default.target
+```
 
 ![service file](/images/service-file.png)
+
 Set appropriate permissions for both, the Systemd service unit and script:
 `sudo chmod 744 /usr/local/bin/fix-ntfs-disk.sh
 sudo chmod 664 /etc/systemd/system/fix-ntfs-disk.sh
