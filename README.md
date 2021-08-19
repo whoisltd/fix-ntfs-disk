@@ -42,7 +42,7 @@ write it:
 ``` bash
 #!/bin/bash
 
-printf "Start\n" >> /home/fix-ntfs-dík-log.txt
+printf "Start\n" >> /home/fix-ntfs-disk-log.txt
 date >> /home/fix-ntfs-disk-log.txt
 umount /dev/your-partition |& tee -a /home/fix-ntfs-disk-log.txt
 ntfsfix /dev/your-partition |& tee -a /home/fix-ntfs-disk-log.txt
