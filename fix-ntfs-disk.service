@@ -1,0 +1,9 @@
+
+[Unit]
+After=network.service
+
+[Service]
+ExecStart=/usr/local/bin/fix-ntfs-disk.sh
+
+[Install]
+WantedBy=default.target
