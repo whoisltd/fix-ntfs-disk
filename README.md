@@ -27,7 +27,7 @@ You will need it if you use Windows parallel Linux. When you restart to Linux fo
 ### If you dont want auto fix it you just do:
 
 - unmount folder have permission denie
-- run command `sudo ntfsfix <path of partition>`
+- run command `sudo ntfsfix <path of partition need fix>`
 - `sudo mount -a`
 
 ### If you want auto it:
