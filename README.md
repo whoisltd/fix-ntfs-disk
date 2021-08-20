@@ -6,7 +6,7 @@ Auto mount partition & Auto fix permission denied
 
 Create folder to mount your disks in there
 
-Example: media/folderA
+Example: `mkdir /media/folderA`
 
 Edit file fstab
 `sudo gedit /etc/fstab`
