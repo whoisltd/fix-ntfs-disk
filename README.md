@@ -18,7 +18,7 @@ Example:
 `/dev/sda1 /media/folderA ntfs-3g deafaults/ uid=1000 0 0`
 in there:
 - `/dev/sda1` is partition you want mount
-- `/media/folderA` is folder you want to contain this partition
+- `/media/folderA` is folder you want to contain this partition (folder you created above)
 - `ntfs-3g` is type of partition
 - `uid=1000` be like the recycle bin, if without this file will cant restore when it deleted 
 # Auto fix permission denied
