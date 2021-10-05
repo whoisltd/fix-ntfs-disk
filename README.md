@@ -1,4 +1,4 @@
-# fix-ntfs-disk
+# Fix NTFS disk
 fix fucking ntfs disk on linux
 
 Auto mount partition & Auto fix permission denied
