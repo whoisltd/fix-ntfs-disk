@@ -15,7 +15,7 @@ Edit file fstab
 Add partitions which you want to the last line
 
 Example:
-`/dev/sda1 /media/folderA ntfs-3g deafaults/ uid=1000 0 0`
+`/dev/sda1 /media/folderA ntfs-3g defaults/ uid=1000 0 0`
 in there:
 - `/dev/sda1` is partition you want mount
 - `/media/folderA` is folder you want to contain this partition (folder you created above)
